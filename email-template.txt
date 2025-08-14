@@ -1,0 +1,8 @@
+Hi {!Registration__c.Student__c},
+
+You have successfully registered for the event "{!Registration__c.Event__c}" booked at {!TEXT(Registration__c.Registration_Date__c)}.
+
+Event Date: {!Registration__c.EventDate__c}
+
+Thank you,
+Event Team

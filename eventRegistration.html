@@ -1,0 +1,61 @@
+<template>
+    <lightning-card title="Event Registration">
+        <div class="slds-p-around_medium">
+
+            <!-- 1. Registration Name -->
+            <lightning-input
+                name="regName"
+                label="Registration Name"
+                value={regName}
+                onchange={handleChange}>
+            </lightning-input>
+
+            <!-- 2. Student -->
+            <lightning-combobox
+                name="selectedStudentId"
+                label="Student"
+                placeholder="Search Students..."
+                options={students}
+                value={selectedStudentId}
+                onchange={handleChange}>
+            </lightning-combobox>
+
+            <!-- 3. Event -->
+            <lightning-combobox
+                name="selectedEventId"
+                label="Event"
+                placeholder="Search Events..."
+                options={events}
+                value={selectedEventId}
+                onchange={handleChange}>
+            </lightning-combobox>
+
+            <!-- 4. Registration Date -->
+            <lightning-input
+                type="date"
+                name="registrationDate"
+                label="Registration Date"
+                value={registrationDate}
+                onchange={handleChange}>
+            </lightning-input>
+
+            <!-- 5. Email -->
+            <lightning-input
+                type="email"
+                name="email"
+                label="Email"
+                value={email}
+                onchange={handleChange}>
+            </lightning-input>
+
+            <!-- Submit -->
+            <lightning-button
+                variant="brand"
+                label="Register"
+                onclick={handleRegister}
+                class="slds-m-top_medium">
+            </lightning-button>
+
+        </div>
+    </lightning-card>
+</template>
